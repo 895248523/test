@@ -1,0 +1,74 @@
+班级：软件181
+姓名：曹宇航
+
+1.return
+
+2.null array 
+
+3.报错：a不存在
+
+4.
+	function add(){
+		var num1 = parseInt(prompt("请输入第一个数字"));
+		var num2 = parseInt(prompt("请输入第二个数字"));
+		return alert("相加 ="+(num1+num2));
+	}
+	add();
+
+5.
+	var num=0;
+	for(var i=20;i<=40;i++){
+		num+=i;
+	}
+	alert("20-40的累加值为:"+num);
+
+6. 
+	document.getElementsByClassName("类名");
+	document.querySelector(".类名");
+	document.querySelectorAll(".类名");
+	
+7.
+	<div id="div"><div>;
+	var div=document.getElementById('div');
+	div.className="abc";
+
+8.
+	var div = document.getElementsByTagName("div");
+	for(var i=0;i<div.length;i++){
+		div[i].style.display="inline-block";
+		div[i].style.marginLeft=15+"px";
+		div[i].style.width=30+'px';
+		div[i].style.height=30+'px';
+		div[i].style.backgroundColor= "red";
+		div[i].style.borderRadius="100%";
+		div[i].onclick=function(){
+			this.style.backgroundColor= "blue";
+			this.style.transition="1s";
+			this.style.borderRadius="";
+		}
+	}
+
+9.
+	<h1 id="h1">你好周一</h1>
+	<input type="button" name="btn" id="btn" value="替换按钮" />
+	<script type="text/javascript">
+		var btn = document.getElementById("btn");
+		var h1 = document.getElementsByTagName("h1")[0];
+		var h3 = document.createElement("h3");
+		h3.innerText="你好周一";
+		btn.onclick=function(){
+			document.body.replaceChild(h3,h1);
+		}
+	
+10.
+	for(var i=0;i<5;i++){
+		for(var j=0;j<6;j++){
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			div.style.width=20+"px";
+			div.style.height=20+"px";
+			div.style.border="1px solid black";
+			div.style.display="inline-block"
+		}
+		document.write("<br>");
+	}
