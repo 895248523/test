@@ -30,9 +30,9 @@
 答:
 	<h3 id="h3"></h3>
 	<script type="text/javascript">
-		var num=79387.348;
+		var s=79387.348;
 		var h3=document.getElementById("h3");
-		h3.innerHTML=num.toFixed(2);
+		h3.innerHTML=s.toFixed(2);
 	</script>
 4.一张图片是一个相对路径img/head/icon/1.jpg,我只需要拿到它的文件夹目录后显示在页面id为h4的元素中
 答:
