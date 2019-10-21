@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h5 id="h5"></h5>
+		<script type="text/javascript">
+			var p = prompt("请输入验证码:SiLw");
+			var num="SiLw";
+			if(num.toLowerCase()==p.toLowerCase()||num.toUpperCase==p.toUpperCase){
+				alert("输入正确");
+			}
+			var h5=document.getElementById("h5");
+			h5.innerHTML=p;
+		</script>
+	</body>
+</html>
